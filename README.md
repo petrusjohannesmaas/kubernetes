@@ -48,7 +48,7 @@ git clone https://github.com/petrusjohannesmaas/api-containerfile-templates.git
 cd api-containerfile-templates
 ```
 
-## 🏗️ Building the Containers
+## 🏗️ Building the Containers (Docker images)
 
 ### Flask (Python)
 
@@ -67,8 +67,6 @@ docker build -t express-api -f Containerfile .
 ```bash
 docker build -t go-api -f Containerfile .
 ```
-
----
 
 ## ▶️ Running the Containers
 
@@ -90,8 +88,6 @@ docker run -d -p 3000:3000 express-api
 docker run -d -p 8080:8080 go-api
 ```
 
----
-
 ## 🔍 Testing the APIs
 
 Use `curl` or open in your browser:
@@ -107,8 +103,6 @@ Or visit:
 * [http://localhost:5000](http://localhost:5000) – Flask
 * [http://localhost:3000](http://localhost:3000) – Express
 * [http://localhost:8080](http://localhost:8080) – Go
-
----
 
 ## 📤 Pushing to Docker Hub
 
@@ -136,8 +130,6 @@ Repeat the steps for other images (`express-api`, `go-api`) as needed.
 
 > 📝 Replace `yourusername` with your Docker Hub username.
 
----
-
 ## 🧰 Managing Containers
 
 ```bash
@@ -146,16 +138,12 @@ docker stop <container>  # Stop container
 docker rm <container>    # Remove container
 ```
 
----
-
 ## 📈 Future Enhancements
 
 * Add more language templates (e.g., Rust, Java)
 * Add support for **Docker Compose**
 * Add support for **Kubernetes** deployment files
 * Improve Go template to support third-party packages
-
----
 
 ## 📄 License
 
