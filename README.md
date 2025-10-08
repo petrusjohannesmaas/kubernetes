@@ -1,10 +1,10 @@
-# 🐳 API Containerfile Templates
+# API Containerfile Templates
 
-## 🚀 Overview
+## 🐳 Overview
 
-A collection of production-ready containerized API templates for:
+A collection of starter API servers, packaged as Docker templates for:
 
-* **Python Flask**
+* **Python (Flask)**
 * **JavaScript (Express.js)**
 * **Go (net/http)**
 
@@ -12,21 +12,11 @@ These templates offer a simple yet powerful starting point for building and depl
 
 > 💡 **Tip:** Podman can be used as a drop-in replacement for Docker. Just swap `docker` with `podman`—they both follow the [OCI standards](https://opencontainers.org/).
 
----
-
-## 📦 Repository Usage
-
-This repository is a **template**—you can generate your own project from it without copying my commit history. For help, refer to [GitHub’s Template Repo Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-Want to include a database too? Use it alongside my [`dev-database-deployer`](https://github.com/petrusjohannesmaas/dev-database-deployer) for a full API + database dev environment.
-
----
-
 ## 🛠 Image Versions
 
 Choose from stable or long-term support (LTS) versions when customizing your `Containerfile`.
 
-### 🐍 Python
+### Python
 
 | Version  | Notes                             |
 | -------- | --------------------------------- |
@@ -34,14 +24,14 @@ Choose from stable or long-term support (LTS) versions when customizing your `Co
 | `3.11`   | LTS (Sec. updates until Oct 2027) |
 | `3.14`   | Upcoming (Oct 2025)               |
 
-### 🦫 Go
+### Go
 
 | Version  | Notes                    |
 | -------- | ------------------------ |
 | `1.24.3` | Latest Stable (May 2025) |
 | `1.24.0` | Major Release (Feb 2025) |
 
-### ⚙️ Node.js
+### Node.js
 
 | Version | Notes                   |
 | ------- | ----------------------- |
@@ -51,16 +41,12 @@ Choose from stable or long-term support (LTS) versions when customizing your `Co
 
 > ✅ **Recommended:** Use LTS versions for stability in production environments.
 
----
-
 ## 📂 Clone the Repository
 
 ```bash
 git clone https://github.com/petrusjohannesmaas/api-containerfile-templates.git
 cd api-containerfile-templates
 ```
-
----
 
 ## 🏗️ Building the Containers
 
@@ -168,7 +154,6 @@ docker rm <container>    # Remove container
 * Add support for **Docker Compose**
 * Add support for **Kubernetes** deployment files
 * Improve Go template to support third-party packages
-* **Incorporate CI/CD processes** (e.g., GitHub Actions, GitLab CI)
 
 ---
 
